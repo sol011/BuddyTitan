@@ -1,0 +1,10 @@
+[Unit]
+Description=PROTOCOL 2 - UPHOLD THE MISSION 
+After=BT-protocol-1.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /bin/do_nothing
+[Install]
+WantedBy=multi-user.target
+

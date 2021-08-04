@@ -1,0 +1,10 @@
+[Unit]
+Description=PROTOCOL 1 - LINK TO USER
+After=polkit.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /bin/do_nothing
+[Install]
+WantedBy=multi-user.target
+
